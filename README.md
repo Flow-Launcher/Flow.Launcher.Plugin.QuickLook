@@ -1,4 +1,4 @@
-# Flow.Launcher.Plugin.QuickLook
+## Overview
 
 Use QuickLook to preview files in Flow Launcher. Only enabled with Flow Launcher version >= 1.19.0
 

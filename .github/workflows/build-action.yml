@@ -1,10 +1,6 @@
 name: build
 
 on:
-  push:
-    paths-ignore: 
-      - .github/workflows/*
-
   pull_request:
 
 jobs:

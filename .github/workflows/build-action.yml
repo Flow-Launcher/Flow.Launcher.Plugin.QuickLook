@@ -1,0 +1,30 @@
+name: build
+
+on:
+  push:
+    paths-ignore: 
+      - .github/workflows/*
+
+  pull_request:
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+        cache: true
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore -c Release
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: QuickLook
+        path: ./Output/Release/Flow.Launcher.Plugin.QuickLook

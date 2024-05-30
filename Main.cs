@@ -18,10 +18,6 @@ namespace Flow.Launcher.Plugin.QuickLook
             return Task.CompletedTask;
         }
 
-        public async Task TogglePreviewAsync(string path)
-        {
-            await QuickLookHelper.ToggleQuickLookAsync(path).ConfigureAwait(false);
-        }
         public async Task ClosePreviewAsync()
         {
             await QuickLookHelper.CloseQuickLookAsync().ConfigureAwait(false);

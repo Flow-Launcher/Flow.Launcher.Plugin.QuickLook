@@ -35,6 +35,11 @@ namespace Flow.Launcher.Plugin.QuickLook
 
         public async Task<List<Result>> QueryAsync(Query query, CancellationToken token) => new List<Result>();
 
+        // Due to QuickLook's size and position not persisted after hiding, and resets itself in the
+        // center screen position when appears, this is set to false to override the AlwaysPreview setting in flow
+        // so that when the query window appears QuickLook does not also appear and block the view.
+        public bool AllowAlwaysPreview() => false;
+
         public string GetTranslatedPluginTitle()
         {
             return Context.API.GetTranslation("plugin_name");

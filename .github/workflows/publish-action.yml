@@ -18,7 +18,7 @@ jobs:
         with:
           dotnet-version: '7.0.x'
           cache: true
-          cache-dependency-path: '**\packages.lock.json'
+          cache-dependency-path: './packages.lock.json'
       - name: get version
         id: version
         uses: notiz-dev/github-action-json-property@release

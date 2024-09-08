@@ -1,6 +1,6 @@
 ## Overview
 
-Use QuickLook to preview files in Flow Launcher. Only enabled with Flow Launcher version >= 1.19.0
+Use [QuickLook](https://github.com/QL-Win/QuickLook/releases/latest) to preview files in Flow Launcher. Only enabled with Flow Launcher version >= 1.19.0
 
 ## Usage
 

@@ -5,7 +5,7 @@
   "Name": "QuickLook",
   "Description": "Use QuickLook to preview files",
   "Author": "Flow Launcher Team",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Language": "csharp",
   "Website": "https://github.com/Flow-Launcher/Flow.Launcher.Plugin.QuickLook",
   "ExecuteFileName": "Flow.Launcher.Plugin.QuickLook.dll",
